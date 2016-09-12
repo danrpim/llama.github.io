@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>I luv Llamas</title>
+
+    <style>
+
+      body {
+        background-color: #eaf0ff;
+        font-size: 1.4em;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .navbar {
+        color: green;
+      }
+      .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+      }
+
+      .navbar .navbar-collapse {
+        text-align: center;
+      }
+
+      #facts {
+        padding-top: 60px;
+      }
+
+      #facts_text {
+        margin: 0px;
+      }
+
+      #facts img {
+        height: 250px;
+        width: auto;
+        border-radius: 40%;
+        display: block;
+        margin: auto;
+      }
+
+      #alpaca {
+        padding-top: 30px;
+      }
+
+      #alpaca img {
+        height:300px;
+        width:auto;
+        display:block;
+        margin:auto;
+      }
+
+      #quiz {
+        padding-top: 20px;
+      }
+
+      #quiz li {
+        width: 60px;
+      }
+
+      #llama_button {
+        margin-right: 20px;
+      }
+
+      #about {
+        padding: 30px 0 40px 0;
+      }
+
+      #about img {
+        height: 350px;
+        width: auto;
+        border-radius: 10%;
+        display: block;
+        float:left;
+        margin: 0 20px 20px 0;
+      }
+
+    </style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner center">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+              <li class="active bold"><a href="#facts">Facts & Figures</a></li>
+              <li class="bold"><a href="#alpaca">Llama vs Alpaca</a></li>
+              <li class="bold"><a href="#about">About the Shepherd</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container" id="facts">
+      <div class="row">
+        <h2 class="center">Facts & Figures about Llamas</h2>
+        <div class="col-sm-8">
+          <div id="facts_text">
+            <p>Are you crazy about llamas??? Do you count llamas instead of sheep to fall asleep?
+              It looks like you're in the right place, then! Check out these facts to learn more about our favorite furry creature!
+            <ul>
+              <li>South American hump-less relative to the camel</li>
+              <li>Typically used as pack animals carrying anywhere from 50 to 75 pounds</li>
+              <li>Can cover up to 20 miles in a single day - talk about endurance!</li>
+              <li>Graze on grass and, like cows, regurgitate food to consume it as cud</li>
+            </ul>
+            <p>*All facts were taken from <a href="http://animals.nationalgeographic.com/animals/mammals/llama/">National Geographic.</a></p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 image-container">
+          <img src="https://pbs.twimg.com/profile_images/269279233/llama270977_smiling_llama_400x400.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="alpaca">
+      <div class="row">
+        <div lcass="col-sm-12">
+          <h2 class="center">Llama vs Alpaca</h2>
+          <div>
+            <p>
+              This is one of the most controversial and debated topics of all time. After countless sleepless nights, I decided to
+              to delve into this mystery and uncover the truth once and for all. Here are 6 major differences between the seemingly indistinguishable animals.
+              Makes sure to <span class="bold">pay attention</span>, as there will be a quiz afterward!
+            </p>
+            <ol>
+              <li>Ears: Llamas have longer, banana-shaped ears. Alpacas have short spear-shaped ears.</li>
+              <li>Weight: Llamas can get as heavy as 400 pounds, while Alpacas generally weigh around 150 pounds. </li>
+              <li>Face: Llamas have long faces, whereas an alpaca's face generally appears more blunt or smooshed.</li>
+              <li>Purpose: Llamas have been bread for use as pack animals and for meat. Alpacas have been bread primarily for their fiber.</li>
+              <li>Hair: Alpacas produce finer fiber than llamas. Alpacas also produce more fleece in a wider variety of colors. </li>
+              <li>Disposition: Llamas are more independent minded, while Alpacas are definitely herd animals.</li>
+            </ol>
+            <p>*All information taken from <a href="http://modernfarmer.com/2015/09/difference-between-llama-and-alpaca/">Modern Farmer.</a>
+            <h4 class="center">QUIZ TIME!</h4>
+            <p class="center">You just read more about llamas and alpacas than you care to know. Now let's put it to the test. <br /><br />
+              <span class="bold">Llama or alpaca??</span>
+            </p>
+            <img src="http://www.sandhillalpacas.com/images/Faith%20a%20Litening.jpg" />
+            <ul class="list-inline center" id="quiz">
+              <li class="btn btn-primary" id="llama_button">Llama</li>
+              <li class="btn btn-primary" id="alpaca_button">Alpaca</li>
+            </ul>
+
+            <script type="text/javascript">
+                document.getElementById("llama_button").onclick=function() {
+                    alert("Try Again!");
+                }
+                document.getElementById("alpaca_button").onclick=function() {
+                    alert("You got it! A+ for you!");
+                }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="about">
+      <div class="row">
+        <h2 class="center">About the Shepherd</h2>
+        <div class="col-sm-12">
+          <img src="mypic.jpg" />
+
+          <p>
+            First and foremost, if you read through the website you would know there is something off about my picture. Yes, that's right. That is in fact an
+            alpaca, not a llama. This picture was taken years ago in my home country of Ecuador. I've lived the majority of my life in a small town in the southern
+            tip of Texas called McAllen. I've heard summers are pretty rough in Las Vegas, but rest assured I've persevered through heat and humidity my whole life.
+            I'm currently a junior at The University of Texas at Austin majoring in Business Honors, MIS, and Urban Studies with a certificate in computer science.<br /><br />
+
+            Over the summer, I self-taught myself web development because I thought it was an incredibly useful tool to have. If I'm being completely honest, I
+            am not the best or most experienced web developer out there. However, let me give you some reasons why I should receive an interview. I pride myself on continuously seeking new challenges and opportunities to learn, so you can be sure that I will
+            be able to adapt to Zappos' business and engineering needs. I'm currently enrolled in the most challenging class in my degree, MIS 333K Web Applications.
+            Our project for the semester is to build an iTunes clone, so you can be sure that I will have significantly more experience as both a front-end and back-end
+            developer by the time the internship rolls around. I think front-end development is a really fun and exciting creative exercise. I'm particularly interested in how the
+            front-end can utilize customer insights to impact the user experience and consequently business outcomes. I would love to be a part of Zappos' driven and entrepreneurial
+            culture. I will prepare diligently for the internship to ensure that my skills exceed expectations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+    	integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
